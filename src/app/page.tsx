@@ -31,6 +31,7 @@ import {
 } from "lucide-react"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 
 export default function ModernPortfolio() {
   const [isVisible, setIsVisible] = useState(false)
@@ -91,13 +92,13 @@ export default function ModernPortfolio() {
       if (response.ok) {
         setSubmitStatus({
           type: "success",
-          message: "Thank you for your message! I'll get back to you soon.",
+          message: "Thank you for your message! I&apos;ll get back to you soon.",
         })
         setFormData({ name: "", email: "", message: "" })
       } else {
         throw new Error("Failed to send message")
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus({
         type: "error",
         message: "Sorry, there was an error sending your message. Please try again or contact me directly.",
@@ -162,7 +163,7 @@ export default function ModernPortfolio() {
         type: "success",
         message: "Download started — if the file still fails, check file path / case-sensitivity / deployment.",
       })
-    } catch (err: any) {
+    } catch (err) {
       console.error("downloadCV error:", err)
       setSubmitStatus({
         type: "error",
@@ -378,7 +379,7 @@ export default function ModernPortfolio() {
               <div className="relative inline-block mb-8">
                 <div className="w-40 h-40 bg-gradient-to-br from-cyan-400 via-purple-500 to-pink-500 rounded-full p-1 mx-auto">
                   <div className="w-full h-full bg-slate-900 rounded-full flex items-center justify-center">
-                    <img src="/logo.png" alt="Logo" />
+                    <Image width={320} height={320} src="/logo.png" alt="Logo" />
                   </div>
                 </div>
                 <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-400 rounded-full border-4 border-slate-900"></div>
@@ -410,7 +411,7 @@ export default function ModernPortfolio() {
                   onClick={() => scrollToSection("contact")}
                 >
                   <Mail className="w-5 h-5 mr-2" />
-                  Let's Connect
+                  Let&apos;s Connect
                 </Button>
                 <Button
                   size="lg"
@@ -451,17 +452,17 @@ export default function ModernPortfolio() {
               </h2>
               <div className="space-y-6 text-white/80 text-lg leading-relaxed">
                 <p>
-                  I'm a passionate software developer with a relentless drive to create clean, efficient, and scalable
+                  I&apos;m a passionate software developer with a relentless drive to create clean, efficient, and scalable
                   solutions. My journey spans from medical studies to becoming a full-stack developer, bringing a unique
                   analytical perspective to software architecture.
                 </p>
                 <p>
-                  Specializing in backend development and system architecture, I've led successful migrations from
+                  Specializing in backend development and system architecture, I&apos;ve led successful migrations from
                   monolithic to microservices, implemented complex authentication systems, and mentored teams in
                   adopting Clean Architecture principles.
                 </p>
                 <p>
-                  When I'm not coding, I'm exploring new technologies, contributing to open-source projects, and sharing
+                  When I&apos;m not coding, I&apos;m exploring new technologies, contributing to open-source projects, and sharing
                   knowledge with the developer community.
                 </p>
               </div>
@@ -733,13 +734,13 @@ export default function ModernPortfolio() {
           <div className="bg-gradient-to-br from-cyan-500/10 to-purple-500/10 rounded-3xl p-12 backdrop-blur-sm border border-white/10">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-white mb-6">
-                Let's Build Something{" "}
+                Let&apos;s Build Something{" "}
                 <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                   Amazing
                 </span>
               </h2>
               <p className="text-xl text-white/70 max-w-2xl mx-auto">
-                Ready to transform your ideas into scalable, efficient solutions? Let's discuss how we can work together
+                Ready to transform your ideas into scalable, efficient solutions? Let&apos;s discuss how we can work together
                 to bring your vision to life.
               </p>
             </div>
@@ -749,7 +750,7 @@ export default function ModernPortfolio() {
               <CardHeader>
                 <CardTitle className="text-white text-center">Send me a message</CardTitle>
                 <CardDescription className="text-white/70 text-center">
-                  I'll get back to you as soon as possible
+                  I&apos;ll get back to you as soon as possible
                 </CardDescription>
               </CardHeader>
               <CardContent>
