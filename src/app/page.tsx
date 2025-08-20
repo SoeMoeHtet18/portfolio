@@ -310,7 +310,7 @@ export default function ModernPortfolio() {
                 variant="ghost"
                 size="sm"
                 className="text-white hover:bg-white/20"
-                onClick={() => window.open("https://github.com", "_blank")}
+                onClick={() => window.open("https://github.com/SoeMoeHtet18", "_blank")}
               >
                 <Github className="w-4 h-4" />
               </Button>
@@ -318,7 +318,7 @@ export default function ModernPortfolio() {
                 variant="ghost"
                 size="sm"
                 className="text-white hover:bg-white/20"
-                onClick={() => window.open("https://linkedin.com", "_blank")}
+                onClick={() => window.open("https://www.linkedin.com/in/smhtet182", "_blank")}
               >
                 <Linkedin className="w-4 h-4" />
               </Button>
@@ -859,7 +859,7 @@ export default function ModernPortfolio() {
                 variant="ghost"
                 size="lg"
                 className="text-white/70 hover:text-white hover:bg-white/10"
-                onClick={() => window.open("https://github.com", "_blank")}
+                onClick={() => window.open("https://github.com/SoeMoeHtet18", "_blank")}
               >
                 <Github className="w-6 h-6 mr-2" />
                 GitHub
@@ -868,7 +868,7 @@ export default function ModernPortfolio() {
                 variant="ghost"
                 size="lg"
                 className="text-white/70 hover:text-white hover:bg-white/10"
-                onClick={() => window.open("https://linkedin.com", "_blank")}
+                onClick={() => window.open("https://www.linkedin.com/in/smhtet182", "_blank")}
               >
                 <Linkedin className="w-6 h-6 mr-2" />
                 LinkedIn
@@ -877,7 +877,7 @@ export default function ModernPortfolio() {
                 variant="ghost"
                 size="lg"
                 className="text-white/70 hover:text-white hover:bg-white/10"
-                onClick={() => window.open("https://portfolio.example.com", "_blank")}
+                onClick={() => window.open("https://portfolio-delta-virid-8iotxn93s2.vercel.app", "_blank")}
               >
                 <ExternalLink className="w-6 h-6 mr-2" />
                 Portfolio
